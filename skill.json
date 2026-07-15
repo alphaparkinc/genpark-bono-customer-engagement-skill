@@ -1,0 +1,30 @@
+{
+  "name": "genpark-bono-customer-engagement-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Bono user analytics modal trigger controller.",
+  "author": "genpark",
+  "category": "marketing",
+  "tags": [
+    "marketing",
+    "retention",
+    "bono"
+  ],
+  "inputs": {
+    "user_idle_seconds": {
+      "type": "integer"
+    },
+    "cart_abandoned": {
+      "type": "boolean"
+    }
+  },
+  "outputs": {
+    "trigger_modal": {
+      "type": "boolean"
+    },
+    "modal_coupon_code": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
